@@ -8,7 +8,7 @@
     <title>Tour_Pointing_System</title>
 </head>
 <body>
-    @include('partials._nav')
+
     <div class="card shadow mb-3 d-flex justify-content-center align-items-center">
 
     </div>
