@@ -35,7 +35,18 @@ class AdminController extends Controller
             // Redirect to admin dashboard
             return redirect()->route('dashboard')->with('success', 'Login successful!');
         } else {
-            return redirect()->route('/')->with('error', 'Invalid email or password.');
+           return redirect()->route('welcome')->with('error', 'Invalid email or password.');
         }
     }
+
+    public function logout(Request $request)
+    {
+        // Clear session
+        $request->session()->forget('loggedUser');
+        $request->session()->flush();
+
+        // Redirect to login page
+        return redirect('/')->with('success', 'You have been logged out.');
+    }
+
 }

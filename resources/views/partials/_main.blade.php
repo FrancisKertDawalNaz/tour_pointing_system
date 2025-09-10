@@ -18,7 +18,7 @@
             transition: 0.3s;
         }
         .hover-effect:hover {
-            background-color: #343a40;
+            background-color: #541212;
             color: #ffc107 !important;
         }
     </style>

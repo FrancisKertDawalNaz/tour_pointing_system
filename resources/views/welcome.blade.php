@@ -26,8 +26,23 @@
 
             <!-- Right Column -->
             <div class="col-md-6 d-flex justify-content-center align-items-center flex-column p-4" style="background-color: #FFFCFB;">
+
                 <h2 class="mb-2 text-center" style="color: #541212;">Welcome Admin</h2>
                 <p class="mb-4">Enter your credentials to access the system</p>
+
+                @if (session('success'))
+                <div class="alert alert-success text-center w-100"
+                    style="max-width: 350px; font-size: 14px; padding: 8px 12px; margin-bottom: 15px;">
+                    {{ session('success') }}
+                </div>
+                @endif
+
+                @if (session('error'))
+                <div class="alert alert-danger text-center w-100"
+                    style="max-width: 350px; font-size: 14px; padding: 8px 12px; margin-bottom: 15px;">
+                    {{ session('error') }}
+                </div>
+                @endif
                 <form method="POST" action="{{ route('admin.login.submit') }}" style="width: 100%; max-width: 350px;">
                     @csrf
 
