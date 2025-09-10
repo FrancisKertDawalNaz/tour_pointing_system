@@ -28,7 +28,7 @@
             <div class="col-md-6 d-flex justify-content-center align-items-center flex-column p-4" style="background-color: #FFFCFB;">
                 <h2 class="mb-2 text-center" style="color: #541212;">Welcome Admin</h2>
                 <p class="mb-4">Enter your credentials to access the system</p>
-                <form method="POST" action="#" style="width: 100%; max-width: 350px;">
+                <form method="POST" action="{{ route('admin.login.submit') }}" style="width: 100%; max-width: 350px;">
                     @csrf
 
                     <!-- Email -->
