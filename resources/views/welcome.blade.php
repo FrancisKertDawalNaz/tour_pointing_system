@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/mainpage.css') }}">
-    <title>Tour_Billing_System</title>
+    <title>TourPay</title>
 </head>
 
 <body class="vh-100 d-flex align-items-center justify-content-center" style="background-color: #8C1007;">
 
-    <div class="container" style="max-width: 950px; height: 580px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden;">
+    <div class="container" style="max-width: 950px; height: 500px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden;">
         <div class="row h-100">
             <!-- Left Column -->
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center p-4" style="background-color: #541212; color: #fff;">
@@ -49,9 +49,13 @@
                     </div>
 
                     <!-- Submit -->
-                    <button type="submit" class="btn w-100 text-white mb-5" style="background-color: #3E0703; border: none;">
+                    <button type="submit" class="btn w-100 text-white mb-5"
+                        style="background-color: #3E0703; border: none; transition: 0.3s;"
+                        onmouseover="this.style.backgroundColor='#660B05'"
+                        onmouseout="this.style.backgroundColor='#3E0703'">
                         <i class="fas fa-right-to-bracket me-2"></i> Login
                     </button>
+
 
                     <p style="font-size: 12px; color: #541212;" class="text-center">Having trouble? Contact IT support at franciskert.naz@lspu.edu.ph</p>
                 </form>
