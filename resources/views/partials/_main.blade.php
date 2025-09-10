@@ -24,7 +24,6 @@
     </style>
 </head>
 <body>
-
     <div class="d-flex">
         {{-- Sidebar --}}
         @include('partials._sidebar')
