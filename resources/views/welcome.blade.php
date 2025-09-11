@@ -11,14 +11,14 @@
     <title>TourPay</title>
 </head>
 
-<body class="vh-100 d-flex align-items-center justify-content-center" style="background-color: #8C1007;">
+<body class="vh-100 d-flex align-items-center justify-content-center" style="background-color: #3B060A;">
 
     <div class="container" style="max-width: 950px; height: 500px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden;">
         <div class="row h-100">
             <!-- Left Column -->
-            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center p-4" style="background-color: #541212; color: #fff;">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center p-4" style="background-color: #222222; color: #fff;">
                 <img src="{{ asset('image/ccs.png') }}" alt="Logo" class="logo img-fluid mb-3" style="max-height: 200px;">
-                <h1 style="font-size: 30px;" class=" mb-4">Student Tour Billing System</h1>
+                <h1 style="font-size: 30px;" class=" mb-4  text-warning">Student Tour Billing System</h1>
                 <p style="max-width: 500px; font-size: 16px;">
                     Securely monitor student tour payments and ensure accurate records by verifying who has completed their payment.
                 </p>
@@ -27,7 +27,7 @@
             <!-- Right Column -->
             <div class="col-md-6 d-flex justify-content-center align-items-center flex-column p-4" style="background-color: #FFFCFB;">
 
-                <h2 class="mb-2 text-center" style="color: #541212;">Welcome Admin</h2>
+                <h2 class="mb-2 text-center text-black">Welcome Admin</h2>
                 <p class="mb-4">Enter your credentials to access the system</p>
 
                 @if (session('success'))
@@ -59,7 +59,7 @@
                             <label for="passwordInput">Password</label>
                         </div>
                         <span class="input-group-text bg-white">
-                            <i class="fas fa-lock" id="togglePassword" style="cursor: pointer;"></i>
+                            <i class="fas fa-lock text-warning" id="togglePassword" style="cursor: pointer;"></i>
                         </span>
                     </div>
 

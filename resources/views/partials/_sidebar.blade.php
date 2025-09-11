@@ -1,7 +1,7 @@
 <div class="d-flex" id="wrapper" style="font-family: 'Poppins', sans-serif; min-height: 100vh;">
     <!-- Sidebar -->
     <div id="sidebar" class="border-end shadow-sm p-3 d-flex flex-column"
-        style="width: 250px; transition: 0.3s; background-color:#0B192C; color:white;">
+        style="width: 250px; transition: 0.3s; background-color:#222222; color:white;">
         <h4 class="text-center fw-semibold mb-4">
             <div class="text-center">
                 <img src="{{ asset('image/ccs.png') }}" alt="Admin Icon"
