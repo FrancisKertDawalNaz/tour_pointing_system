@@ -18,6 +18,11 @@ class AdminController extends Controller
         return view('admin_student');
     }
 
+    public function payment()
+    {
+        return view('admin_payment');
+    }
+
     public function adminlogin(Request $request)
     {
         $request->validate([

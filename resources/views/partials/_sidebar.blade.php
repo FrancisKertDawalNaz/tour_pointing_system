@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="#" class="nav-link text-white px-3 py-2 rounded hover-effect">
+                <a href="{{ route('payment') }}" class="nav-link text-white px-3 py-2 rounded hover-effect">
                     <i class="fas fa-money-check-alt text-warning me-2"></i> Payments
                 </a>
             </li>
