@@ -1,5 +1,5 @@
 @extends('partials._main')
-@section('title', 'Students')
+@section('title', 'Payments')
 
 @section('content')
 
