@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +13,25 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa ;
+            background-color: #f8f9fa;
         }
+
         .hover-effect {
             transition: 0.3s;
         }
+
         .hover-effect:hover {
             background-color: #541212;
             color: #ffc107 !important;
         }
+
+        .content-scrollable {
+            height: calc(100vh - 70px);
+            overflow-y: auto;
+        }
     </style>
 </head>
+
 <body>
     <div class="d-flex">
         {{-- Sidebar --}}
@@ -36,4 +45,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

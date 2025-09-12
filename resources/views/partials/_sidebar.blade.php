@@ -1,7 +1,9 @@
-<div class="d-flex" id="wrapper" style="font-family: 'Poppins', sans-serif; min-height: 100vh;">
+<div class="d-flex" id="wrapper" style="font-family: 'Poppins', sans-serif;">
     <!-- Sidebar -->
     <div id="sidebar" class="border-end shadow-sm p-3 d-flex flex-column"
-        style="width: 250px; transition: 0.3s; background-color:#222222; color:white;">
+        style="width: 250px; background-color:#222222; color:white;
+               height: 100vh; position: fixed; top: 0; left: 0; overflow-y: auto;">
+        
         <h4 class="text-center fw-semibold mb-4">
             <div class="text-center">
                 <img src="{{ asset('image/ccs.png') }}" alt="Admin Icon"
@@ -11,17 +13,17 @@
                 <span class="sidebar-label fs-5 text-warning d-block">Admin Panel</span>
                 <small class=" d-block" style="font-size: 10px;color: #9DA9C7;">Payment Management</small>
             </div>
-
         </h4>
+
         <p style="font-size: 12px;" class="text-warning">Navigation</p>
         <ul class="nav flex-column">
             <li class="nav-item mb-2">
-                <a href="#" class="nav-link text-white px-3 py-2 rounded hover-effect">
+                <a href="{{ route('dashboard') }}" class="nav-link text-white px-3 py-2 rounded hover-effect">
                     <i class="fas fa-tachometer-alt text-warning me-2"></i> Dashboard
                 </a>
             </li>
             <li class="nav-item mb-2">
-                <a href="#" class="nav-link text-white px-3 py-2 rounded hover-effect">
+                <a href="{{ route('student') }}" class="nav-link text-white px-3 py-2 rounded hover-effect">
                     <i class="fas fa-user-graduate text-warning me-2"></i> Students
                 </a>
             </li>

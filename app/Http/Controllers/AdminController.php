@@ -13,6 +13,11 @@ class AdminController extends Controller
         return view('admin_dashboard');
     }
 
+    public function student()
+    {
+        return view('admin_student');
+    }
+
     public function adminlogin(Request $request)
     {
         $request->validate([
