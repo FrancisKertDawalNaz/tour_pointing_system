@@ -152,7 +152,7 @@
                         <small class="fw-semibold">84.4%</small>
                     </div>
                     <div class="progress mb-4" style="height: 8px;">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 84.4%"></div>
+                        <div class="progress-bar  bg-warning" role="progressbar" style="width: 84.4%"></div>
                     </div>
                 </div>
             </div>
