@@ -23,6 +23,16 @@ class AdminController extends Controller
         return view('admin_payment');
     }
 
+    public function setting()
+    {
+        return view('admin_setting');
+    }
+
+    public function report()
+    {
+        return view('admin_report');
+    }
+
     public function adminlogin(Request $request)
     {
         $request->validate([

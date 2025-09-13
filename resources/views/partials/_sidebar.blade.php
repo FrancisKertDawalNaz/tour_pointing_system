@@ -27,12 +27,12 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link d-flex align-items-center rounded px-3 py-2 sidebar-link">
+                <a href="{{ route('report') }}" class="nav-link d-flex align-items-center rounded px-3 py-2 sidebar-link">
                     <i class="fas fa-chart-bar me-2 text-primary"></i> Reports
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link d-flex align-items-center rounded px-3 py-2 sidebar-link">
+                <a href="{{ route('setting') }}" class="nav-link d-flex align-items-center rounded px-3 py-2 sidebar-link">
                     <i class="fas fa-cog me-2 text-primary"></i> Settings
                 </a>
             </li>

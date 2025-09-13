@@ -14,5 +14,7 @@ Route::post('/admin/login', [AdminController::class, 'adminlogin'])->name('admin
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 Route::get('/student', [AdminController::class, 'student'])->name('student');
 Route::get('/payment', [AdminController::class, 'payment'])->name('payment');
+Route::get('/setting', [AdminController::class, 'setting'])->name('setting');
+Route::get('/report', [AdminController::class, 'report'])->name('report');
 
 Route::post('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
