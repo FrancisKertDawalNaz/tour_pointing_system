@@ -13,37 +13,37 @@
    </small>
 
    <div class="card mb-4" style="border-radius: 12px;">
-        <div class="card-body">
-            <span class="d-block fs-6 fw-semibold text-dark mb-3">Search & Filter Students</span>
-            
-            <div class="d-flex flex-wrap gap-2">
-                <!-- Search -->
-                <div class="flex-grow-1">
-                    <div class="input-group">
-                        <span class="input-group-text bg-white border-end-0">
-                            <i class="fas fa-search text-muted"></i>
-                        </span>
-                        <input type="text" class="form-control border-start-0" placeholder="Search by name, email, or student ID">
-                    </div>
-                </div>
+      <div class="card-body">
+         <span class="d-block fs-6 fw-semibold text-dark mb-3">Search & Filter Students</span>
 
-                <!-- Filter by Course -->
-                <select class="form-select w-auto">
-                    <option selected disabled>Filter by course</option>
-                    <option value="BSIT">BSIT</option>
-                    <option value="BSCS">BSCS</option>
-                    <option value="BSIS">BSIS</option>
-                </select>
-
-                <!-- Filter by Year -->
-                <select class="form-select w-auto">
-                    <option selected disabled>Filter by year</option>
-                    <option value="1">1st Year</option>
-                    <option value="2">2nd Year</option>
-                </select>
+         <div class="d-flex flex-wrap gap-2">
+            <!-- Search -->
+            <div class="flex-grow-1">
+               <div class="input-group">
+                  <span class="input-group-text bg-white border-end-0">
+                     <i class="fas fa-search text-muted"></i>
+                  </span>
+                  <input type="text" class="form-control border-start-0" placeholder="Search by name">
+               </div>
             </div>
-        </div>
-    </div> 
+
+            <!-- Filter by Course -->
+            <select class="form-select w-auto">
+               <option selected disabled>Filter by course</option>
+               <option value="BSIT">BSIT</option>
+               <option value="BSCS">BSCS</option>
+               <option value="BSIS">BSIS</option>
+            </select>
+
+            <!-- Filter by Year -->
+            <select class="form-select w-auto">
+               <option selected disabled>Filter by year</option>
+               <option value="1">1st Year</option>
+               <option value="2">2nd Year</option>
+            </select>
+         </div>
+      </div>
+   </div>
 
    <div class="card shadow-sm border-0">
       <div class="card-body p-0">
@@ -84,8 +84,8 @@
                      <td class="fw-bold">$450</td>
                      <td>2024-01-15</td>
                      <td>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fas fa-edit"></i></button>
                      </td>
                   </tr>
                   <!-- Row 2 -->
@@ -103,8 +103,8 @@
                      <td class="fw-bold">$380</td>
                      <td>2023-12-20</td>
                      <td>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fas fa-edit"></i></button>
                      </td>
                   </tr>
                   <!-- Row 3 -->
@@ -122,8 +122,8 @@
                      <td class="fw-bold">$520</td>
                      <td>2024-01-18</td>
                      <td>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fas fa-edit"></i></button>
                      </td>
                   </tr>
                   <!-- Row 4 -->
@@ -141,12 +141,76 @@
                      <td class="fw-bold">$300</td>
                      <td>2024-01-10</td>
                      <td>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fas fa-edit"></i></button>
                      </td>
                   </tr>
                </tbody>
             </table>
+         </div>
+      </div>
+   </div>
+
+   <!-- View Modal -->
+   <div class="modal fade" id="viewModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content rounded-3 shadow">
+            <div class="modal-header">
+               <h5 class="modal-title"><i class="fas fa-eye text-primary me-2"></i>View Student</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               <p><strong>Name:</strong> Sarah Johnson</p>
+               <p><strong>Email:</strong> sarah.j@email.com</p>
+               <p><strong>Student ID:</strong> STU001</p>
+               <p><strong>Course:</strong> Computer Science</p>
+               <p><strong>Year:</strong> 3rd Year</p>
+               <p><strong>Status:</strong> Paid</p>
+               <p><strong>Amount:</strong> $450</p>
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Edit Modal -->
+   <div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content rounded-3 shadow">
+            <div class="modal-header">
+               <h5 class="modal-title"><i class="fas fa-edit text-primary me-2"></i>Edit Student</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               <form>
+                  <div class="mb-3">
+                     <label class="form-label">Name</label>
+                     <input type="text" class="form-control" value="Sarah Johnson">
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Email</label>
+                     <input type="email" class="form-control" value="sarah.j@email.com">
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Course</label>
+                     <input type="text" class="form-control" value="Computer Science">
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Year</label>
+                     <input type="text" class="form-control" value="3rd Year">
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Amount</label>
+                     <input type="text" class="form-control" value="450">
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+               <button class="btn btn-primary btn-sm">Save Changes</button>
+            </div>
          </div>
       </div>
    </div>
