@@ -8,7 +8,7 @@
 
    <h6 class="fw-bold mb-3 fs-4"><i class="fas fa-tachometer-alt  rounded-circle text-primary me-2"></i>Dashboard</h6>
 
-    <div class="card shadow mb-3" style="background: linear-gradient(90deg, #007bff, #17a2b8); border: none; border-radius: 12px;">
+    <div class="card  mb-3" style="background: linear-gradient(90deg, #007bff, #17a2b8); border: none; border-radius: 12px;">
         <div class="card-body text-white">
             <span class="d-block fs-4 fw-semibold text-warning">Welcome to TourPay Admin</span>
             <small class="d-block" style="font-size: 12px; color: #e3f2fd;">

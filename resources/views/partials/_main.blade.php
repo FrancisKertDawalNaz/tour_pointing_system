@@ -29,6 +29,10 @@
             height: calc(100vh - 70px);
             overflow-y: auto;
         }
+
+        .table-custom-striped tbody tr:nth-child(odd) {
+            background: #f8fbff;
+        }
     </style>
 </head>
 
